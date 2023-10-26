@@ -1,0 +1,13 @@
+
+VERSION 3:
+Partiendo del cliente_completo v2
+    - Se añade un trozo de programa para crear un log que avise donde han ocurrido 
+    los fallos de lectura del ADC. En que canal y en que dato.
+
+VERSION 4:
+Partiendo del cliente_completo v3
+	- Se cambia el funcionamiento del programa para que se pueda ejecutar de forma continua
+
+VERSION 5:
+Partiendo del cliente_completo v4
+	- Se cambia el funcionamiento para que el iMX8 se pueda configurar desde el cliente.
