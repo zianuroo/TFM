@@ -1,0 +1,41 @@
+$ tree .
+├── Makefile
+├── exe
+├── userspace
+│   ├── Makefile
+│   ├── include
+│   │   ├── main.h
+│   │   ├── myspi.h
+│   │   ├── myspi_funcs.h
+│   │   ├── mygpio_funcs.h
+│   │   ├── server.h
+│   │   ├── server_TCP.h
+│   │   ├── server_UDP.h
+│   │   ├── dataBank.h
+│   │   ├── daq_ceit.h
+│   │   └── crc.h
+│   ├── obj
+│   │   ├── main.o
+│   │   ├── myspi.o
+│   │   ├── myspi_funcs.o
+│   │   ├── mygpio_funcs.o
+│   │   ├── server.o
+│   │   ├── server_TCP.o
+│   │   ├── server_UDP.o
+│   │   └── dataBank.o
+│   └── src
+│       ├── main.c
+│       ├── myspi.c
+│	├── myspi_funcs.c
+│	├── mygpio_funcs.c
+│       ├── server.c
+│       ├── server_TCP.c
+│       ├── server_UDP.c
+│       └── dataBank.c
+└── kernelspace
+    ├── Makefile
+    └── mbdriver
+        ├── Makefile
+        ├── mbkmodule.c
+        └── (mbkmodule.ko)
+

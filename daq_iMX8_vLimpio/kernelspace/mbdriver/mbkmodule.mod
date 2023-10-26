@@ -1,0 +1,2 @@
+/root/daq_iMX8_v14/kernelspace/mbdriver/mbkmodule.o
+

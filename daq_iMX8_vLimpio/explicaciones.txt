@@ -1,0 +1,47 @@
+
+
+VERSION 4:
+Partiendo del daq_iMX8_V3
+	- Se añade el thread para la comunicacion TCP/IP. Se comprueba que dicho thread funciona correctamente.
+
+VERSION 5:
+Partiendo del daq_iMX8_V4
+	- Se añaden mutex para acceder al data_adc de manera sincronizada.
+	- *data_adc [M] pasa a ser **data_adc para poder utilizarlo como variable global.
+	
+VERSION 6:
+Partiendo del daq_iMX8_V5
+	- Se cambia el programa TCP/IP para que envie los datos mientras se va leyendo el ADC
+	
+VERSION 7:
+Partiendo del daq_iMX8_V6
+	- Se cambia el programa para que se pueda enviar por TCP/IP cualquier cantidad de bloques. Esto se hace en conjunto con el cambio de client_v2 a client_v3.
+	
+VERSION 8:
+Partiendo del daq_iMX8_V7
+	- Se optimiza la comunicacion TCP/IP para conseguir que sea mas rapida
+	
+VERSION 9:
+Partiendo del daq_iMX8_V8
+	- Se optimiza la comunicacion TCP/IP aun mas, para mandar bloques completos en una unica transmision
+	
+VERSION 10:
+Partiendo del daq_iMX8_V9
+	- Se cambia del protocolo TCP al protocolo UDP.
+	
+VERSION 11:
+Partiendo del daq_iMX8_V9(TCP) y daq_iMX8_V10(UDP)
+	- Se cambia el funcionamiento del programa para que pueda trabajar tanto con TCP como con UDP, dejando la eleccion al usuario y poniendo por defecto el TCP. También se reduce el uso de los 		mutexes, eliminando los que no son necesarios.
+	
+VERSION 12:
+Partiendo del daq_iMX8_V11
+	- Se busca eliminar la mayor cantidad de warnings posible.
+
+VERSION 13:
+Partiendo del daq_iMX8_V12
+	- Se cambia el funcionamiento del programa para que se ejecute de forma continua. Falta implementar un uso adecuado del ctrl+c para parar la ejecucion.
+
+VERSION 14:
+Partiendo del daq_iMX8_V13
+	- Se cambia el funcionamiento del programa para que el SPI se deba configurar desde el cliente. 
+	PD.: Falta implementar un uso adecuado del ctrl+c para parar la ejecucion indeterminada.
